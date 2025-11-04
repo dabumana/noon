@@ -1,70 +1,59 @@
 @charset "utf-8";
 
-// Primary Color Palette
-$primary-dark: #6A6858;       // RGB: 106-104-88
-$primary-dark-alt: #928E75;   // RGB: 146-142-117
-$primary-mid: #B5B193;        // RGB: 181-177-147
-$primary-light: #DAD6BE;      // RGB: 218-214-190
-$primary-accent: #DBCC60;     // RGB: 219-204-96
+$primary-dark: #0B0004;       // RGB: 11-0-4
+$primary-dark-alt: #160008;   // RGB: 22-0-8
+$primary-mid: #140007;        // RGB: 20-0-7
+$primary-light: #6c4472;      // RGB: 51-0-18
+$primary-accent: #54001E;     // RGB: 84-0-30
 
-// Secondary Color 1
-$secondary-1-dark: #666856;   // RGB: 102-104-86
-$secondary-1-dark-alt: #8C8F73; // RGB: 140-143-115
-$secondary-1-mid: #AEB290;    // RGB: 174-178-144
-$secondary-1-light: #D3D5BB;  // RGB: 211-213-187
-$secondary-1-accent: #CCD75E; // RGB: 204-215-94
+$secondary-1-dark: #0D0900;   // RGB: 13-9-0
+$secondary-1-dark-alt: #191100; // RGB: 25-17-0
+$secondary-1-mid: #160F00;    // RGB: 22-15-0
+$secondary-1-light: #3A2700;  // RGB: 58-39-0
+$secondary-1-accent: #604000; // RGB: 96-64-0
 
-// Secondary Color 2
-$secondary-2-dark: #6A6558;   // RGB: 106-101-88
-$secondary-2-dark-alt: #928A75; // RGB: 146-138-117
-$secondary-2-mid: #B5AB93;    // RGB: 181-171-147
-$secondary-2-light: #DAD2BE;  // RGB: 218-210-190
-$secondary-2-accent: #DBB960; // RGB: 219-185-96
+$secondary-2-dark: #020009;   // RGB: 2-0-9
+$secondary-2-dark-alt: #030111; // RGB: 3-1-17
+$secondary-2-mid: #030010;    // RGB: 3-0-16
+$secondary-2-light: #070128;  // RGB: 7-1-40
+$secondary-2-accent: #dfdee2; // RGB: 13-3-66
 
-// Complement Colors
-$complement-dark: #666856;    // RGB: 102-104-86
-$complement-dark-alt: #8C8F73; // RGB: 140-143-115
-$complement-mid: #AEB290;     // RGB: 174-178-144
-$complement-light: #D3D5BB;   // RGB: 211-213-187
-$complement-accent: #CCD75E;  // RGB: 204-215-94
+$complement-dark: #060C00;    // RGB: 6-12-0
+$complement-dark-alt: #0B1700; // RGB: 11-23-0
+$complement-mid: #0A1400;     // RGB: 10-20-0
+$complement-light: #1A3400;   // RGB: 26-52-0
+$complement-accent: #2C5600;  // RGB: 44-86-0
 
-// Typography
 $base-font-family: "Courier New", Courier, monospace, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !default;
-$base-font-size: 16px !default;
+$base-font-size:   16px !default;
 $base-font-weight: 400 !default;
-$small-font-size: $base-font-size * 0.875 !default;
-$base-line-height: 1.6 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-line-height: 1.6 !default; // Slightly tighter for technical content
 
-// Spacing
-$spacing-unit: 30px !default;
+$spacing-unit:     30px !default;
 
-// Colors
-$text-color: #1a1a1a !default;
-$background-color: #f5f5f0 !default;
-$brand-color: $primary-accent !default;
+$text-color:       lighten($primary-dark, 70%) !default;
+$background-color: $primary-dark !default;
+$brand-color:      $primary-accent !default;
 
-$grey-color: #928E75 !default;
+$grey-color:       mix($primary-dark, $secondary-2-dark, 50%) !default;
 $grey-color-light: lighten($grey-color, 15%) !default;
-$grey-color-dark: darken($grey-color, 15%) !default;
-$warning-color: $secondary-1-accent !default;
+$grey-color-dark:  darken($grey-color, 15%) !default;
+$warning-color:    $secondary-1-accent !default;
 $table-text-align: left !default;
 
-// Layout
-$content-width: 1000px !default;
-$sidebar-width: 250px !default;
+$content-width:    1000px !default; // Wider for technical documentation
+$sidebar-width:    250px !default;
 
-// Breakpoints
-$on-palm: 700px !default;
-$on-laptop: 1000px !default;
+$on-palm:          700px !default;
+$on-laptop:        1000px !default;
 
-$on-medium: $on-palm !default;
-$on-large: $on-laptop !default;
+$on-medium:        $on-palm !default;
+$on-large:         $on-laptop !default;
 
-// Borders
 $border-style: 1px solid rgba($primary-accent, 0.2) !default;
 $border-focus: 1px solid $secondary-2-accent !default;
 
-// Mixins
 @mixin media-query($device) {
   @media screen and (max-width: $device) {
     @content;
@@ -86,36 +75,32 @@ $border-focus: 1px solid $secondary-2-accent !default;
     background-color: rgba($secondary-1-mid, 0.3);
     border-color: $secondary-1-light;
   } @else if $type == 'danger' {
-    color: darken($primary-accent, 40%);
+    color: lighten($primary-accent, 40%);
     background-color: rgba($primary-accent, 0.3);
     border-color: $primary-accent;
   } @else if $type == 'info' {
-    color: darken($secondary-2-accent, 40%);
+    color: lighten($secondary-2-accent, 40%);
     background-color: rgba($secondary-2-mid, 0.3);
     border-color: $secondary-2-light;
   }
 }
 
-// Import partials
 @import
   "noon/base",
   "noon/layout",
   "noon/syntax-highlighting"
 ;
 
-// Component styles
 code, pre {
-  background-color: rgba($secondary-2-mid, 0.7);
+  background-color: rgba($secondary-2-dark, 0.7);
   border: 1px solid $secondary-2-mid;
   border-radius: 3px;
-  color: $primary-dark;
 }
 
 blockquote {
   border-left: 4px solid $secondary-1-mid;
-  background-color: rgba($secondary-1-light, 0.2);
+  background-color: rgba($secondary-1-dark, 0.2);
   padding: 0.5rem 1rem;
-  color: $primary-dark;
 }
 
 .alert-warning {
@@ -131,8 +116,8 @@ blockquote {
 }
 
 .hardware-diagram {
-  background-color: $primary-light;
-  border: 1px solid $primary-mid;
+  background-color: $primary-dark-alt;
+  border: 1px solid $primary-light;
   padding: 1rem;
   margin: 1rem 0;
   
@@ -148,7 +133,7 @@ blockquote {
 
 .classified-banner {
   background-color: $primary-accent;
-  color: $primary-dark;
+  color: $text-color;
   text-align: center;
   padding: 0.5rem;
   font-weight: bold;
