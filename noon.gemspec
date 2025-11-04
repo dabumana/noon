@@ -5,7 +5,7 @@ Gem::Specification.new do |spec|
   spec.version       = "0.1.6"
   spec.authors       = ["dabumana"]
   spec.email         = ["a310n@pm.me"]
-  spec.summary       = "Simple-minimal blog with Ruby."
+  spec.summary       = "Simple-minimal blog."
   spec.homepage      = "https://not-a.xyz"
   spec.license       = "MIT"
   spec.metadata["plugin_type"] = "theme"
