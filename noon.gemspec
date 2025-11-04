@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "noon"
-  spec.version       = "0.1.8"
+  spec.version       = "0.1.9"
   spec.authors       = ["dabumana"]
   spec.email         = ["a310n@pm.me"]
   spec.summary       = "Simple-minimal blog."
