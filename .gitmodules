@@ -1,3 +1,6 @@
 [submodule "test/dabumana.github.io"]
 	path = test/dabumana.github.io
-	url = https://www.github.com/dabumana/dabumana.github.io
+	url = https://github.com/dabumana/dabumana.github.io
+[submodule "test/--force"]
+	path = test/--force
+	url = https://github.com/dabumana/dabumana.github.io
