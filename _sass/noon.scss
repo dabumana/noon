@@ -1,48 +1,48 @@
 @charset "utf-8";
 
-$primary-dark: #0B0004;       // RGB: 11-0-4
-$primary-dark-alt: #160008;   // RGB: 22-0-8
-$primary-mid: #140007;        // RGB: 20-0-7
-$primary-light: #6c4472;      // RGB: 51-0-18
-$primary-accent: #54001E;     // RGB: 84-0-30
+$primary-dark:     #0D1117;
+$primary-dark-alt: #161B22;
+$primary-mid:      #13181F;
+$primary-light:    #30363D;
+$primary-accent:   #C9622F;   // copper-ember accent
 
-$secondary-1-dark: #0D0900;   // RGB: 13-9-0
-$secondary-1-dark-alt: #191100; // RGB: 25-17-0
-$secondary-1-mid: #160F00;    // RGB: 22-15-0
-$secondary-1-light: #3A2700;  // RGB: 58-39-0
-$secondary-1-accent: #604000; // RGB: 96-64-0
+$secondary-1-dark:     #0D1117;
+$secondary-1-dark-alt: #1C2128;
+$secondary-1-mid:      #21262D;
+$secondary-1-light:    #B08800;
+$secondary-1-accent:   #D4A017;
 
-$secondary-2-dark: #020009;   // RGB: 2-0-9
-$secondary-2-dark-alt: #030111; // RGB: 3-1-17
-$secondary-2-mid: #030010;    // RGB: 3-0-16
-$secondary-2-light: #070128;  // RGB: 7-1-40
-$secondary-2-accent: #dfdee2; // RGB: 13-3-66
+$secondary-2-dark:     #0D1117;
+$secondary-2-dark-alt: #1C2128;
+$secondary-2-mid:      #21262D;
+$secondary-2-light:    #1F6FEB;
+$secondary-2-accent:   #D8DCE8;   // steel-gray text
 
-$complement-dark: #060C00;    // RGB: 6-12-0
-$complement-dark-alt: #0B1700; // RGB: 11-23-0
-$complement-mid: #0A1400;     // RGB: 10-20-0
-$complement-light: #1A3400;   // RGB: 26-52-0
-$complement-accent: #2C5600;  // RGB: 44-86-0
+$complement-dark:     #0D1117;
+$complement-dark-alt: #161B22;
+$complement-mid:      #13181F;
+$complement-light:    #30363D;
+$complement-accent:   #A34E22;   // copper hover
 
-$base-font-family: "Courier New", Courier, monospace, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !default;
-$base-font-size:   16px !default;
+$base-font-family: "IBM Plex Mono", "JetBrains Mono", "Fira Code", "Courier New", Courier, monospace !default;
+$base-font-size:   15px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
-$base-line-height: 1.6 !default; // Slightly tighter for technical content
+$base-line-height: 1.7 !default;
 
 $spacing-unit:     30px !default;
 
-$text-color:       lighten($primary-dark, 70%) !default;
+$text-color:       $secondary-2-accent !default;
 $background-color: $primary-dark !default;
 $brand-color:      $primary-accent !default;
 
-$grey-color:       mix($primary-dark, $secondary-2-dark, 50%) !default;
+$grey-color:       #6B7280 !default;
 $grey-color-light: lighten($grey-color, 15%) !default;
 $grey-color-dark:  darken($grey-color, 15%) !default;
 $warning-color:    $secondary-1-accent !default;
 $table-text-align: left !default;
 
-$content-width:    1000px !default; // Wider for technical documentation
+$content-width:    1000px !default;
 $sidebar-width:    250px !default;
 
 $on-palm:          700px !default;
