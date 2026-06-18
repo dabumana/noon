@@ -27,9 +27,9 @@
   letter-spacing: 1px;
   margin-bottom: 0;
   float: left;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "IBM Plex Serif", Courier, monospace;
   text-transform: uppercase;
-  background: linear-gradient(to right, $primary-light, $secondary-2-accent);
+  background: $secondary-2-accent;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

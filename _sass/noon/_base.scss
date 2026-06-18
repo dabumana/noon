@@ -83,14 +83,12 @@ a {
   transition: all 0.2s ease;
 
   &:visited {
-    color: darken($primary-light, 60%);
+    color: rgba($primary-accent, 0.8);
   }
 
   &:hover {
     color: $secondary-2-accent;
     text-decoration: none;
-    background: rgba($secondary-2-mid, 0.5);
-    box-shadow: 0 0 3px rgba($secondary-2-accent, 0.5);
   }
 
   .social-media-list &:hover {
