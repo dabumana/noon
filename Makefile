@@ -1,3 +1,8 @@
+build-agent:
+	mkdir node agent
+	cd ./node && git submodule add --force 'https://github.com/ggml-org/llama.cpp'
+	cd ./agent && git submodule add --force 'https://github.com/anomalyco/opencode'
+	cd ./agent/opencode && chmod +x ./install && ./install
 build:
 	gem build noon.gemspec
 	tree .

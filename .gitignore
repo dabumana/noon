@@ -1,6 +1,7 @@
 .bundle
 .sass-cache
 .jekyll-cache
+test
 _site
 Gemfile.lock
 rvm.sh
