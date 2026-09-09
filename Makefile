@@ -12,5 +12,5 @@ parent-preview: build
 local-preview: build
 	cp ./noon*.gem ./test/$(NAME)
 	cd ./test/$(NAME) && bundle install && gem install noon*.gem && bundle exec jekyll serve
-clean:
+local-clean:
 	cd ./test/$(NAME) && gem uninstall rdoc
