@@ -1,12 +1,12 @@
 {% if page.mermaid != false %}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.15.0/mermaid.min.js"></script>
     <script>
-    $(this).ready(function () {
+    document.addEventListener("DOMContentLoaded", function () {
         mermaid.initialize({
-        startOnLoad:true,
-        theme: "default",
+            startOnLoad: true,
+            theme: "redux-dark",
         });
-        window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+        mermaid.init(undefined, document.querySelectorAll(".language-mermaid"));
     });
     </script>
 {% endif %}
