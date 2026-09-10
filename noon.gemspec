@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "noon"
-  spec.version       = "0.2.10"
+  spec.version       = "0.2.11"
   spec.authors       = ["dabumana"]
   spec.email         = ["a310n@pm.me"]
   spec.summary       = "Blog"
@@ -16,6 +16,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.8.0"
   spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4.0"
   spec.add_runtime_dependency "jekyll-sass-converter", "~> 3.1.0"
+  spec.add_runtime_dependency "jekyll-archives", "~> 2.3.0"
   spec.add_runtime_dependency "terminal-table", "~> 3.0.2"
   spec.add_runtime_dependency "bundler", "~> 4.0.14"
   spec.add_runtime_dependency "rake", "~> 13.4.2"
